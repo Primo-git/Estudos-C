@@ -9,12 +9,15 @@ int main() {
 int numerosecreto;
 numerosecreto = 42;
 int chute;
+int acertou;
 
 printf("Qual é o seu chute?\n");
 scanf("%d", &chute);
 printf("Seu chute foi %d\n", chute);
 
-if(chute == numerosecreto) {
+acertou = chute == numerosecreto;
+
+if(acertou) {
     printf("Parabéns! Você acertou!");
 } else {
     if(chute > numerosecreto) {
